@@ -1,0 +1,11 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+D:/EC605_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+D:/EC605_Lab/Lab2/Lab2.srcs/sim_1/new/ALU_testbench.v,1727459814,verilog,,,,ALU_testbench,,,,,,,,
+D:/EC605_Lab/Lab2/Lab2.srcs/sim_1/new/Full_Adder_testbench.v,1727452190,verilog,,,,Full_Adder_testbench,,,,,,,,
+D:/EC605_Lab/Lab2/Lab2.srcs/sim_1/new/Ripple_Carry_Adder_testbench.v,1727452836,verilog,,,,Ripple_Carry_Adder_testbench,,,,,,,,
+D:/EC605_Lab/Lab2/Lab2.srcs/sources_1/new/ALU.v,1727458538,verilog,,D:/EC605_Lab/Lab2/Lab2.srcs/sim_1/new/ALU_testbench.v,,ALU,,,,,,,,
+D:/EC605_Lab/Lab2/Lab2.srcs/sources_1/new/Full_Adder.v,1727402497,verilog,,D:/EC605_Lab/Lab2/Lab2.srcs/sim_1/new/Full_Adder_testbench.v,,Full_Adder,,,,,,,,
+D:/EC605_Lab/Lab2/Lab2.srcs/sources_1/new/Ripple_Carry_Adder.v,1727452478,verilog,,D:/EC605_Lab/Lab2/Lab2.srcs/sim_1/new/Ripple_Carry_Adder_testbench.v,,Ripple_Carry_Adder,,,,,,,,
