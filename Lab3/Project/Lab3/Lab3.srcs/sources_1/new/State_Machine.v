@@ -47,10 +47,9 @@ module State_Machine (
           3'b000:  state <= (in == 1'b1) ? 3'b001 : 3'b000;
           3'b001:  state <= (in == 1'b1) ? 3'b001 : 3'b010;
           3'b010:  state <= (in == 1'b1) ? 3'b101 : 3'b000;
-          3'b101:  
-          begin
+          3'b101: begin
             state <= (in == 1'b1) ? 3'b001 : 3'b010;
-            out <= out + 4'b0001;
+            out   <= out + 4'b0001;
           end
           default: state <= state;
         endcase

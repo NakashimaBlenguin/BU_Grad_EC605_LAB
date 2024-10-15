@@ -319,8 +319,8 @@ module Top_module (
       .out(Value),
       .state(leds)
   );
-  
-  
+
+
   /**************** CONNECT ALU OUTPUT WITH SEVEN SEGMENT DISPLAY ******************/
   /* Here you initialize seven_seg, the register for the output of the seven segment dsiplay*/
   seven_segment sev_seg (

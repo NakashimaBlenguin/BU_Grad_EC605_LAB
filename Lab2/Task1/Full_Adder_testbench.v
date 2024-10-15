@@ -20,28 +20,47 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Full_Adder_testbench(
+module Full_Adder_testbench ();
+  reg A, B, Cin;
+  wire Sum, Cout;
 
-    );
-    reg A, B, Cin;
-    wire Sum, Cout;
-    
-    Full_Adder FA1(.A(A), .B(B), .Cin(Cin), .Sum(Sum), .Cout(Cout));
-    
-    initial
-    begin
-        A=0;
-        B=0;
-        Cin=0;
-        
-        #100 A=0;B=0;Cin=0;
-        #100 A=0;B=0;Cin=1;
-        #100 A=0;B=1;Cin=0;
-        #100 A=0;B=1;Cin=1;
-        #100 A=1;B=0;Cin=0;
-        #100 A=1;B=0;Cin=1;
-        #100 A=1;B=1;Cin=0;
-        #100 A=1;B=1;Cin=1;
-        #100 $finish;
-    end
+  Full_Adder FA1 (
+      .A(A),
+      .B(B),
+      .Cin(Cin),
+      .Sum(Sum),
+      .Cout(Cout)
+  );
+
+  initial begin
+    A   = 0;
+    B   = 0;
+    Cin = 0;
+
+    #100 A = 0;
+    B   = 0;
+    Cin = 0;
+    #100 A = 0;
+    B   = 0;
+    Cin = 1;
+    #100 A = 0;
+    B   = 1;
+    Cin = 0;
+    #100 A = 0;
+    B   = 1;
+    Cin = 1;
+    #100 A = 1;
+    B   = 0;
+    Cin = 0;
+    #100 A = 1;
+    B   = 0;
+    Cin = 1;
+    #100 A = 1;
+    B   = 1;
+    Cin = 0;
+    #100 A = 1;
+    B   = 1;
+    Cin = 1;
+    #100 $finish;
+  end
 endmodule

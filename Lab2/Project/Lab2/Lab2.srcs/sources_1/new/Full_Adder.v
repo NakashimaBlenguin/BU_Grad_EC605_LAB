@@ -20,19 +20,25 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Full_Adder(A,B,Cin,Sum,Cout);
-    input A,B,Cin;
-    output Sum,Cout;
-    
-    wire w0,w1,w2; 
+module Full_Adder (
+    A,
+    B,
+    Cin,
+    Sum,
+    Cout
+);
+  input A, B, Cin;
+  output Sum, Cout;
 
-    //assign Sum=A^B^Cin;
-    //assign Cout= (A&&B)||(A&&Cin)||(B&&Cin);
-    
-    xor(Sum,A,B,Cin);
-    and(w0,A,B);
-    and(w1,A,Cin);
-    and(w2,B,Cin);
-    or(Cout,w0,w1,w2);
+  wire w0, w1, w2;
+
+  //assign Sum=A^B^Cin;
+  //assign Cout= (A&&B)||(A&&Cin)||(B&&Cin);
+
+  xor (Sum, A, B, Cin);
+  and (w0, A, B);
+  and (w1, A, Cin);
+  and (w2, B, Cin);
+  or (Cout, w0, w1, w2);
 
 endmodule
