@@ -302,11 +302,7 @@ module Top_module (
       .switch8(switches[8]),
       .switch9(switches[9])
   );
-  always @(posedge clk_1hz) begin
-    if (!switches[10]) begin
-      in <= seq[9];
-    end
-  end
+
   /**************** CONNECT FLAGS WITH LEDS ******************/
 
 
@@ -314,7 +310,7 @@ module Top_module (
   State_Machine SM (
       .clk(clk_1hz),
       .rst(rst),
-      .in(in),
+      .in(seq[9]),
       .pause(switches[10]),
       .out(Value),
       .state(leds)

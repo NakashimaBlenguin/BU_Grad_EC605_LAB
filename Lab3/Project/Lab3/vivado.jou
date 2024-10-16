@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Oct 15 15:52:26 2024
-# Process ID: 23828
+# Start of session at: Wed Oct 16 02:33:55 2024
+# Process ID: 14032
 # Current directory: C:/Users/chenh/Desktop/EC605_LAB/Lab3/Project/Lab3
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20440 C:\Users\chenh\Desktop\EC605_LAB\Lab3\Project\Lab3\Lab3.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13728 C:\Users\chenh\Desktop\EC605_LAB\Lab3\Project\Lab3\Lab3.xpr
 # Log file: C:/Users/chenh/Desktop/EC605_LAB/Lab3/Project/Lab3/vivado.log
 # Journal file: C:/Users/chenh/Desktop/EC605_LAB/Lab3/Project/Lab3\vivado.jou
 # Running On        :LAPTOP-3F3DSVGS
@@ -17,10 +17,13 @@
 # CPU Physical cores:8
 # CPU Logical cores :16
 # Host memory       :16556 MB
-# Swap memory       :3489 MB
-# Total Virtual     :20046 MB
-# Available Virtual :6841 MB
+# Swap memory       :6766 MB
+# Total Virtual     :23322 MB
+# Available Virtual :4173 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/chenh/Desktop/EC605_LAB/Lab3/Project/Lab3/Lab3.xpr
 update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/chenh/Desktop/EC605_LAB/Lab3/Project/Lab3/Lab3.srcs/sim_1/new/Top_Module_testbench.v
+update_compile_order -fileset sim_1
