@@ -37,9 +37,9 @@ module Top_Module_testbench(
     clk=0;
     rst=0;
     switches=11'b01010101010;
-    #50000000 rst=1'b1;
-    #50000000 rst=1'b0;
-    #100000000 switches[10]=1'b1;
-    #100000000 switches[10]=1'b0;
+    #250000000 rst=1'b1;
+    #100000000 rst=1'b0;
+    #1000000000 switches[10]=1'b1;
+    #1000000000 switches[10]=1'b0;
     end
 endmodule

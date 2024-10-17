@@ -275,11 +275,8 @@ module Top_module (
 
 
   wire [9:0] seq;
-  reg in;
   wire clk_1hz;
   wire [3:0] Value;
-  reg [3:0] Seg_Value;
-  reg pause;
 
   ClockDivider TarClock (
       .clk_1hz(clk_1hz),
