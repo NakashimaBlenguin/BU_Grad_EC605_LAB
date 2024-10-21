@@ -58,7 +58,7 @@ module ALU (
     N = (Y[3] == 1) ? 1 : 0;
     Z = (Y == 4'b0000) ? 1 : 0;
     if (OPCODE == 3'b101) begin
-      V = ((A[3] ！= B[3]) && (Y[3] != A[3])) ? 1 : 0;
+        V = ((A[3] != B[3]) && (Y[3] != A[3])) ? 1 : 0;
     end
 
     if (OPCODE == 3'b110) begin
