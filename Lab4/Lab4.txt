@@ -1,0 +1,59 @@
+/* Task1 Code */
+/****************/
+addi x5, x0, 0x0 //Seq[0]=0
+sw x5, 0x80(x0) //save to mem
+addi x5, x0, 0x1 //Seq[1]=1
+sw x5, 0x84(x0)
+addi x6, x0, 0x2 //i=2
+addi x7, x0, 0x20 //loop until i==32
+LOOP:
+beq x6, x7, END 
+add x29, x6, x0
+slli x29, x29, 0x2
+addi x29, x29, 0x78 //address of Seq[i-2]
+lw x30, 0x0(x29) //load Seq[i-2]
+lw x31, 0x4(x29) //load Seq[i-1]
+add x31, x30, x31
+sw x31, 0x8(x29) //Seq[i]=Seq[i-1]+Seq[i-2]
+addi x6, x6, 0x1
+beq x0, x0, LOOP
+END:
+
+/* Task 1 Result */
+/*****************/
+v2.0 raw
+33*0 1 1 2 3 5 8 d 
+15 22 37 59 90 e9 179 262 
+3db 63d a18 1055 1a6d 2ac2 452f 6ff1 
+b520 12511 1da31 2ff42 4d973 7d8b5 cb228 148add
+/*--------------------------------------------------------------------------------------------*/
+
+/* Task2 Code */
+/****************/
+addi x5, x0, 0x1F
+slli x5, x5, 0x2
+addi x5, x5, 0x80 //address of last element in Seq
+addi x6, x0, 0x0 //i=0
+addi x31, x0, 0x20 //loop until i==32
+LOOP:
+beq x31, x6, END
+slli x7, x6, 0x2
+sub x29, x5, x7
+lw x30, 0x0(x29) //load Seq[31-i]
+xori x30,x30,0x7D2 //X-OR encryption
+sw x30, 0x0(x7) //x[i]=Seq[31-i]
+addi x6, x6, 0x1 //i++
+beq x0, x0, LOOP
+END:
+
+/* Task 2 Result */
+/*****************/
+v2.0 raw
+148d0f cb5fa 7df67 4dea1 2f890 1dde3 122c3 b2f2 
+6823 42fd 2d10 1dbf 1787 dca 1ef 409 
+5b0 6ab 73b 742 78b 7e5 7f0 7c7 
+7df 7da 7d7 7d1 7d0 7d3 7d3 7d2 
+0 1 1 2 3 5 8 d 
+15 22 37 59 90 e9 179 262 
+3db 63d a18 1055 1a6d 2ac2 452f 6ff1 
+b520 12511 1da31 2ff42 4d973 7d8b5 cb228 148add
