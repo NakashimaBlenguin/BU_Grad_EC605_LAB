@@ -6,8 +6,8 @@ addi x5, x0, 0x1 //Seq[1]=1
 sw x5, 0x84(x0)
 addi x6, x0, 0x2 //i=2
 addi x7, x0, 0x20 //loop until i==32
-LOOP:
-beq x6, x7, END 
+LOOP1:
+beq x6, x7, END1 
 add x29, x6, x0
 slli x29, x29, 0x2
 addi x29, x29, 0x78 //address of Seq[i-2]
@@ -16,8 +16,8 @@ lw x31, 0x4(x29) //load Seq[i-1]
 add x31, x30, x31
 sw x31, 0x8(x29) //Seq[i]=Seq[i-1]+Seq[i-2]
 addi x6, x6, 0x1
-beq x0, x0, LOOP
-END:
+beq x0, x0, LOOP1
+END1:
 
 /* Task 1 Result */
 /*****************/
@@ -35,16 +35,16 @@ slli x5, x5, 0x2
 addi x5, x5, 0x80 //address of last element in Seq
 addi x6, x0, 0x0 //i=0
 addi x31, x0, 0x20 //loop until i==32
-LOOP:
-beq x31, x6, END
+LOOP2:
+beq x31, x6, END2
 slli x7, x6, 0x2
 sub x29, x5, x7
 lw x30, 0x0(x29) //load Seq[31-i]
 xori x30,x30,0x7D2 //X-OR encryption
 sw x30, 0x0(x7) //x[i]=Seq[31-i]
 addi x6, x6, 0x1 //i++
-beq x0, x0, LOOP
-END:
+beq x0, x0, LOOP2
+END2:
 
 /* Task 2 Result */
 /*****************/
