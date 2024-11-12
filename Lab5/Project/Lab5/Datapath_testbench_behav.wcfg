@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Datapath_testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Datapath_testbench" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="2,500.001 ns"></ZoomEndTime>
+      <Cursor1Time time="1,850.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="340"></NameColumnWidth>
+      <ValueColumnWidth column_width="105"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="52" />
+   <wvobject fp_name="/Datapath_testbench/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/PC/InstructionCountIn" type="array">
+      <obj_property name="ElementShortName">InstructionCountIn[31:0]</obj_property>
+      <obj_property name="ObjectShortName">InstructionCountIn[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/PC/InstructionCountOut" type="array">
+      <obj_property name="ElementShortName">InstructionCountOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">InstructionCountOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/PC/select_branch" type="logic">
+      <obj_property name="ElementShortName">select_branch</obj_property>
+      <obj_property name="ObjectShortName">select_branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/IMem/Address" type="array">
+      <obj_property name="ElementShortName">Address[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Address[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/IMem/ReadData" type="array">
+      <obj_property name="ElementShortName">ReadData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/IMem/memory_file" type="array">
+      <obj_property name="ElementShortName">memory_file[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">memory_file[0:31][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/IMem/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/IMem/BITSIZE" type="array">
+      <obj_property name="ElementShortName">BITSIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BITSIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/IMem/MEMSIZE" type="array">
+      <obj_property name="ElementShortName">MEMSIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEMSIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Control_Unit/ReadInstruction" type="array">
+      <obj_property name="ElementShortName">ReadInstruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadInstruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Control_Unit/Immediate" type="array">
+      <obj_property name="ElementShortName">Immediate[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Immediate[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Control_Unit/ReadReg1Address" type="array">
+      <obj_property name="ElementShortName">ReadReg1Address[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadReg1Address[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Control_Unit/ReadReg2Address" type="array">
+      <obj_property name="ElementShortName">ReadReg2Address[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadReg2Address[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Control_Unit/WriteRegAddress" type="array">
+      <obj_property name="ElementShortName">WriteRegAddress[4:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteRegAddress[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Control_Unit/ALU_Src" type="logic">
+      <obj_property name="ElementShortName">ALU_Src</obj_property>
+      <obj_property name="ObjectShortName">ALU_Src</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Control_Unit/MemtoReg" type="logic">
+      <obj_property name="ElementShortName">MemtoReg</obj_property>
+      <obj_property name="ObjectShortName">MemtoReg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Control_Unit/RegWrite" type="logic">
+      <obj_property name="ElementShortName">RegWrite</obj_property>
+      <obj_property name="ObjectShortName">RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Control_Unit/MemRead" type="logic">
+      <obj_property name="ElementShortName">MemRead</obj_property>
+      <obj_property name="ObjectShortName">MemRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Control_Unit/MemWrite" type="logic">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Control_Unit/Branch" type="logic">
+      <obj_property name="ElementShortName">Branch</obj_property>
+      <obj_property name="ObjectShortName">Branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Control_Unit/ALU_Control" type="array">
+      <obj_property name="ElementShortName">ALU_Control[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_Control[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Control_Unit/ALU_Op" type="logic">
+      <obj_property name="ElementShortName">ALU_Op</obj_property>
+      <obj_property name="ObjectShortName">ALU_Op</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Reg_File/ReadSelect1" type="array">
+      <obj_property name="ElementShortName">ReadSelect1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadSelect1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Reg_File/ReadSelect2" type="array">
+      <obj_property name="ElementShortName">ReadSelect2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadSelect2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Reg_File/WriteSelect" type="array">
+      <obj_property name="ElementShortName">WriteSelect[4:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteSelect[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Reg_File/WriteData" type="array">
+      <obj_property name="ElementShortName">WriteData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Reg_File/WriteEnable" type="logic">
+      <obj_property name="ElementShortName">WriteEnable</obj_property>
+      <obj_property name="ObjectShortName">WriteEnable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Reg_File/ReadData1" type="array">
+      <obj_property name="ElementShortName">ReadData1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Reg_File/ReadData2" type="array">
+      <obj_property name="ElementShortName">ReadData2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Reg_File/reg_file" type="array">
+      <obj_property name="ElementShortName">reg_file[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_file[31:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Reg_File/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Reg_File/BITSIZE" type="array">
+      <obj_property name="ElementShortName">BITSIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BITSIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/Reg_File/REGSIZE" type="array">
+      <obj_property name="ElementShortName">REGSIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">REGSIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/ALU_DP/A" type="array">
+      <obj_property name="ElementShortName">A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/ALU_DP/B" type="array">
+      <obj_property name="ElementShortName">B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/ALU_DP/OPCODE" type="array">
+      <obj_property name="ElementShortName">OPCODE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">OPCODE[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/ALU_DP/Y" type="array">
+      <obj_property name="ElementShortName">Y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/ALU_DP/Z" type="logic">
+      <obj_property name="ElementShortName">Z</obj_property>
+      <obj_property name="ObjectShortName">Z</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/BCL/Branch" type="logic">
+      <obj_property name="ElementShortName">Branch</obj_property>
+      <obj_property name="ObjectShortName">Branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/BCL/zero" type="logic">
+      <obj_property name="ElementShortName">zero</obj_property>
+      <obj_property name="ObjectShortName">zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/BCL/select_branch" type="logic">
+      <obj_property name="ElementShortName">select_branch</obj_property>
+      <obj_property name="ObjectShortName">select_branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/DMem/Address" type="array">
+      <obj_property name="ElementShortName">Address[5:0]</obj_property>
+      <obj_property name="ObjectShortName">Address[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/DMem/WriteData" type="array">
+      <obj_property name="ElementShortName">WriteData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/DMem/MemoryRead" type="logic">
+      <obj_property name="ElementShortName">MemoryRead</obj_property>
+      <obj_property name="ObjectShortName">MemoryRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/DMem/MemoryWrite" type="logic">
+      <obj_property name="ElementShortName">MemoryWrite</obj_property>
+      <obj_property name="ObjectShortName">MemoryWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/DMem/ReadData" type="array">
+      <obj_property name="ElementShortName">ReadData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/DMem/mem_file" type="array">
+      <obj_property name="ElementShortName">mem_file[63:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_file[63:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/DMem/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/DMem/BITSIZE" type="array">
+      <obj_property name="ElementShortName">BITSIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BITSIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/DMem/MEMSIZE" type="array">
+      <obj_property name="ElementShortName">MEMSIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEMSIZE[31:0]</obj_property>
+   </wvobject>
+</wave_config>
