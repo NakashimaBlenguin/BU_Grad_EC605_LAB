@@ -25,7 +25,7 @@ input [6:0] OPCODE;
 output reg ALU_Src, MemtoReg, RegWrite, MemRead, MemWrite, Branch;
 output reg [1:0] ALU_Op;
 
-always @(posedge clk or posedge rst)
+always @(*)
 begin
     if(rst)
     begin
@@ -114,7 +114,7 @@ input [1:0] ALU_Op;
 input [31:0] ReadInstruction;
 output reg [3:0] ALU_Control;
 
-always @(posedge clk or posedge rst)
+always @(*)
 begin
     if(rst)
     begin
@@ -182,7 +182,7 @@ input clk,rst;
 input [31:0] ReadInstruction;
 output reg [31:0] Immediate;
 
-always @(posedge clk or posedge rst)
+always @(*)
 begin
     if(rst)
         Immediate <= 32'b0;
@@ -211,7 +211,7 @@ output [3:0] ALU_Control;
 
 wire ALU_Op;
 
-always @(posedge clk or posedge rst)
+always @(*)
 begin
     if(rst)
     begin

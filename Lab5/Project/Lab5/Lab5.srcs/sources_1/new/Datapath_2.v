@@ -75,7 +75,7 @@ module Datapath(clk, rst);
 //----------------Data Memory----------------//
 
     wire [31:0] ReadMemData;
-    Data_Memory DMem(ALU_Out, ReadRegData2, MemRead, MemWrite, ReadMemData, clk, rst);
+    Data_Memory DMem(ALU_Out[5:0], ReadRegData2, MemRead, MemWrite, ReadMemData, clk, rst);
     MUX M2(ALU_Out,ReadMemData,MemtoReg,WriteRegData);
     // instantiate: Data_Memory #( , ) DMem(); // remember to set the parameters for the data memory
     

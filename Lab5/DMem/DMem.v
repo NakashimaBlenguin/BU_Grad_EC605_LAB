@@ -9,16 +9,16 @@ module Data_Memory(
     parameter BITSIZE = 32;
     parameter MEMSIZE = 64;
     
-    reg [BITSIZE-1:0] mem_file [MEMSIZE-1:0];
+    reg [BITSIZE-1:0] mem_file [0:MEMSIZE-1];
     integer i;
     
-    always @(*) begin
+    always @(posedge clk) begin
         if (MemoryWrite) begin
-            mem_file[Address] = WriteData; 
+            mem_file[Address] <= WriteData; 
         end
     end
 
-    always @(*) begin
+    always @(Address, mem_file[Address]) begin
         if (MemoryRead)
             ReadData = mem_file[Address]; 
     end

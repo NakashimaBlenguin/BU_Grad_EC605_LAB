@@ -41,7 +41,7 @@ module ALU (
     Z <=1'b0;
   end
 
-  always @(posedge clk or posedge rst) begin
+  always @(*) begin
     if(rst)
     begin
         Y = 32'b0000_0000_0000_0000_0000_0000_0000_0000;

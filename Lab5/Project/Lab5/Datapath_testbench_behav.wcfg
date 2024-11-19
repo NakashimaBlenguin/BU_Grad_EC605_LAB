@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="2,500.001 ns"></ZoomEndTime>
-      <Cursor1Time time="1,850.000 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="8.155559 us"></ZoomEndTime>
+      <Cursor1Time time="1.550000 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="340"></NameColumnWidth>
-      <ValueColumnWidth column_width="105"></ValueColumnWidth>
+      <NameColumnWidth column_width="338"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="52" />
+   <WVObjectSize size="53" />
    <wvobject fp_name="/Datapath_testbench/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -40,6 +40,10 @@
       <obj_property name="ElementShortName">select_branch</obj_property>
       <obj_property name="ObjectShortName">select_branch</obj_property>
    </wvobject>
+   <wvobject fp_name="/Datapath_testbench/DP_TEST/PC/initialized" type="logic">
+      <obj_property name="ElementShortName">initialized</obj_property>
+      <obj_property name="ObjectShortName">initialized</obj_property>
+   </wvobject>
    <wvobject fp_name="/Datapath_testbench/DP_TEST/IMem/Address" type="array">
       <obj_property name="ElementShortName">Address[4:0]</obj_property>
       <obj_property name="ObjectShortName">Address[4:0]</obj_property>
@@ -49,8 +53,8 @@
       <obj_property name="ObjectShortName">ReadData[31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/Datapath_testbench/DP_TEST/IMem/memory_file" type="array">
-      <obj_property name="ElementShortName">memory_file[0:31][31:0]</obj_property>
-      <obj_property name="ObjectShortName">memory_file[0:31][31:0]</obj_property>
+      <obj_property name="ElementShortName">memory_file[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">memory_file[31:0][31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/Datapath_testbench/DP_TEST/IMem/i" type="array">
       <obj_property name="ElementShortName">i[31:0]</obj_property>
@@ -213,8 +217,8 @@
       <obj_property name="ObjectShortName">ReadData[31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/Datapath_testbench/DP_TEST/DMem/mem_file" type="array">
-      <obj_property name="ElementShortName">mem_file[63:0][31:0]</obj_property>
-      <obj_property name="ObjectShortName">mem_file[63:0][31:0]</obj_property>
+      <obj_property name="ElementShortName">mem_file[0:63][31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_file[0:63][31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/Datapath_testbench/DP_TEST/DMem/i" type="array">
       <obj_property name="ElementShortName">i[31:0]</obj_property>

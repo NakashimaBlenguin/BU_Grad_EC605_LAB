@@ -1,7 +1,7 @@
-Running: xsim.dir/CtrlLog_testbench_behav/xsimk.exe -simmode gui -wdb CtrlLog_testbench_behav.wdb -simrunnum 0 -socket 8700
+Running: xsim.dir/CtrlLog_testbench_behav/xsimk.exe -simmode gui -wdb CtrlLog_testbench_behav.wdb -simrunnum 0 -socket 12419
 Design successfully loaded
-Design Loading Memory Usage: 8556 KB (Peak: 8556 KB)
+Design Loading Memory Usage: 8540 KB (Peak: 8540 KB)
 Design Loading CPU Usage: 0 ms
 Simulation completed
-Simulation Memory Usage: 9184 KB (Peak: 9184 KB)
+Simulation Memory Usage: 9208 KB (Peak: 9208 KB)
 Simulation CPU Usage: 0 ms

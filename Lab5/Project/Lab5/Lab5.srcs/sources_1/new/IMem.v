@@ -5,7 +5,7 @@ module Instruction_Memory(Address, ReadData);
     input [$clog2(MEMSIZE)-1:0] Address;
     output reg [BITSIZE-1:0] ReadData;
 
-    reg [BITSIZE-1:0] memory_file [0:MEMSIZE-1]; // Entire list of memory
+    reg [BITSIZE-1:0] memory_file [MEMSIZE-1:0]; // Entire list of memory
 
     // Asynchronous read of memory
     always @(Address, memory_file[Address])
@@ -46,9 +46,9 @@ module Instruction_Memory(Address, ReadData);
             i = i+1;
             memory_file[i] = 32'b00000000011100101001001001101011;  // BLT x5, x7, label2
             i = i+1;
-            memory_file[i] = 32'b00000000010000001010000001100011;  // SW x4, 0(x1)
-            i = i+1;
             memory_file[i] = 32'b00000000000000001010011011000011;  // LW x13, 0(x1)
+            i = i+1;
+            memory_file[i] = 32'b00000000010000001010000001100011;  // SW x4, 0(x1)
             i = i+1;
             memory_file[i] = 32'b00000000000101101000011100011111;  // ADDI x14, x13, 1
             i = i+1;
