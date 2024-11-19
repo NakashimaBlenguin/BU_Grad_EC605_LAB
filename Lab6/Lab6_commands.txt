@@ -1,0 +1,11 @@
+./hello2 chenhr | figlet > Lab6_figlet
+cp ~/Lab6_hello.c ~/tmp
+chmod g+r Lab6_hello.c
+chmod o+r Lab6_hello.c
+chmod g+x Lab6_hello.c
+ls -l Lab6_hello.c
+./fork >> Lab6_fork_output.txt
+./fork >> Lab6_fork_output.txt
+./fork >> Lab6_fork_output.txt
+grep "Child pid" Lab6_fork_output.txt > Lab6_fork_child.txt
+grep "Parent pid" Lab6_fork_output.txt > Lab6_fork_parent.txt
