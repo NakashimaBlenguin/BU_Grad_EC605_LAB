@@ -20,9 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Branch_Control_Logic(clk, rst, Branch, zero, select_branch);
+module Branch_Control_Logic(clk, rst, Branch, zero, select_branch,func3);
 input clk, rst;
-input Branch, zero;
+input Branch, zero,func3;
 output reg select_branch;
 
 initial
@@ -30,7 +30,7 @@ begin
     select_branch = 1'b0;
 end
 
-always @(posedge clk or posedge rst)
+always @(*)
 begin
     if(rst)
     begin
@@ -39,7 +39,10 @@ begin
     
     else
     begin
-        select_branch <= Branch & zero;
+        if(func3==3'b000)
+            select_branch <= Branch & zero;
+        else if(func3==3'b001)
+            select_branch <= Branch & (!zero);
     end
 end
 

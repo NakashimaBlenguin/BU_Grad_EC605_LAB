@@ -21,7 +21,7 @@ always @(posedge clk or posedge rst) begin
         initialized <= 1'b1;
         InstructionCountOut <= 32'd0;
     end else begin
-        if (select_branch == 1'b1) begin
+        if (select_branch) begin
             if (InstructionCountIn[31] == 1'b1) begin
                 InstructionCountOut <= InstructionCountOut - (~InstructionCountIn + 1);
             end else begin

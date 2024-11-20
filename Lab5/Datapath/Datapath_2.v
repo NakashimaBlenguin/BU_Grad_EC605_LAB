@@ -68,7 +68,7 @@ module Datapath(clk, rst);
 //----------------Branch Control----------------//
     
     wire select_branch;
-    Branch_Control_Logic BCL(clk, rst, Branch, zero, select_branch);
+    Branch_Control_Logic BCL(clk, rst, Branch, zero, select_branch,ReadInstruction[14:12]);
     
     // instantiate branch control unit
 

@@ -1,9 +1,14 @@
 ./hello2 chenhr | figlet > Lab6_figlet
-cp ~/Lab6_hello.c ~/tmp
+cp /home/chenhr/Desktop/Lab6/Lab6_hello.c /tmp/permission
 chmod g+r Lab6_hello.c
+ls -l Lab6_hello.c
+Output:-rwxr-----. 1 chenhr users 83 Nov 20 12:15 Lab6_hello.c
 chmod o+r Lab6_hello.c
+ls -l Lab6_hello.c
+Output:-rwxr--r--. 1 chenhr users 83 Nov 20 12:15 Lab6_hello.c
 chmod g+x Lab6_hello.c
 ls -l Lab6_hello.c
+Output:-rwxr-xr--. 1 chenhr users 83 Nov 20 12:15 Lab6_hello.c
 ./fork >> Lab6_fork_output.txt
 ./fork >> Lab6_fork_output.txt
 ./fork >> Lab6_fork_output.txt

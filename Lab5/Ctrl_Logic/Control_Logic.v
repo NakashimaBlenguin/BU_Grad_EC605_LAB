@@ -151,13 +151,18 @@ begin
         end
         
         else if(ReadInstruction[6:0]==7'b1101011)
+        begin
+        if(ReadInstruction[14:12]==3'b000)
             ALU_Control <= 4'b0101;
+        else if(ReadInstruction[14:12]==3'b001)
+            ALU_Control <= 4'b0111;
+        end    
             
         else if(ReadInstruction[6:0]==7'b1100011)
-            ALU_Control <= 4'b0101;
+            ALU_Control <= 4'b0110;
             
         else if(ReadInstruction[6:0]==7'b1000011)
-            ALU_Control <= 4'b0101;
+            ALU_Control <= 4'b0110;
             
         else if(ReadInstruction[6:0]==7'b0110000)
             ALU_Control <= 4'b1000;
@@ -191,6 +196,10 @@ begin
     begin
         if(ReadInstruction[6:0]==7'b1101011)
             Immediate <= $signed({ReadInstruction[31], ReadInstruction[7], ReadInstruction[30:25], ReadInstruction[11:8],1'b0});
+        else if(ReadInstruction[6:0]==7'b1100011)
+            Immediate <= {ReadInstruction[31:25],ReadInstruction[11:7]};
+        else if(ReadInstruction[6:0]==7'b1000011)
+            Immediate <= ReadInstruction[31:20];
         else if(ReadInstruction[6:0]==7'b0110000)
             Immediate <= ReadInstruction[31:12] << 12 ;
         else if(ReadInstruction[6:0]==7'b0011111)

@@ -5,8 +5,26 @@ Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'Address' [D:/EC605_Lab/Lab5/Lab5.srcs/sources_1/new/Datapath_2.v:29]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'ALU_Op' [D:/EC605_Lab/Lab5/Lab5.srcs/sources_1/new/Control_Logic.v:231]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'ALU_Op' [D:/EC605_Lab/Lab5/Lab5.srcs/sources_1/new/Control_Logic.v:232]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'Address' [C:/Users/chenh/Desktop/BU_Grad_EC605_LAB/Lab5/Project/Lab5/Lab5.srcs/sources_1/new/Datapath_2.v:29]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'ALU_Op' [C:/Users/chenh/Desktop/BU_Grad_EC605_LAB/Lab5/Project/Lab5/Lab5.srcs/sources_1/new/Control_Logic.v:240]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'ALU_Op' [C:/Users/chenh/Desktop/BU_Grad_EC605_LAB/Lab5/Project/Lab5/Lab5.srcs/sources_1/new/Control_Logic.v:241]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'func3' [C:/Users/chenh/Desktop/BU_Grad_EC605_LAB/Lab5/Project/Lab5/Lab5.srcs/sources_1/new/Datapath_2.v:71]
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.ALU_Control_Generator
+Compiling module xil_defaultlib.Immediate_Generator
+Compiling module xil_defaultlib.Control_Logic
+Compiling module xil_defaultlib.Register_File
+Compiling module xil_defaultlib.MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Branch_Control_Logic
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.Datapath
+Compiling module xil_defaultlib.Datapath_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Datapath_testbench_behav

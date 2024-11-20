@@ -26,7 +26,7 @@ module Data_Memory(
     always @(posedge rst) begin
         if (rst) begin
             for (i = 0; i < MEMSIZE; i = i + 1)
-                mem_file[i] <= i; 
+                mem_file[i] <= 0; 
         end
     end
 
